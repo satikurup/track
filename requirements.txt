@@ -1,0 +1,6 @@
+moviepy
+numpy
+opencv-python-headless
+Pillow
+plot
+streamlit
