@@ -35,9 +35,12 @@ from PIL import Image
 import numpy as np 
 import tempfile
 
-st.title("Track Defect Detection..")
-if st.button("Track defect"):
-  
+ra = st.sidebar.selectbox(
+    " Track ",
+    ("Track defect","Track defect")
+)  
+if ra == "Track defect":
+  st.title("Track Defect Detection")
 # Function to Read and Manupilate Images
   def load_image(img):
        im = Image.open(img)
@@ -45,7 +48,7 @@ if st.button("Track defect"):
        return image
 
 # Uploading the File to the Page
-  uploadFile = st.file_uploader(label="upload a track image", type=['jpg', 'png'])
+  uploadFile = st.file_uploader(label="Upload image", type=['jpg', 'png'])
 
 # Checking the Format of the page
   if uploadFile is not None:
@@ -59,6 +62,5 @@ if st.button("Track defect"):
     cv2.imwrite('image.png',img)
     st.image('image.png',img)
   else:
-    st.write("Make sure you image is in JPG/PNG Format.") 
-
+    st.write("Make sure you image is in JPG/PNG Format.")  
       
