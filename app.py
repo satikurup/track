@@ -1,20 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Fri Nov 19 09:19:30 2021
 
-@author: 28067
-"""
-
-# -*- coding: utf-8 -*-
-"""
-Created on Mon Nov 15 12:36:39 2021
-
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Nov 11 20:35:50 2021
-
-@author: ATHIRA
-"""
 
 import time
 import numpy as np
