@@ -49,6 +49,10 @@ if ra == "Track defect":
   if uploadFile is not None:
     # Perform your Manupilations (In my Case applying Filters)
     img = load_image(uploadFile)
+    
+    image=st.image(img)
+    st.write("Image Uploaded Successfully")
+    cv2.imwrite('image.png',img)
     st.markdown("""
 <style>
 .big-font {
@@ -57,10 +61,7 @@ if ra == "Track defect":
 </style>
 """, unsafe_allow_html=True)
     st.markdown('<p class="big-font">Defective</p>', unsafe_allow_html=True)
-    image=st.image(img)
-    st.write("Image Uploaded Successfully")
-    cv2.imwrite('image.png',img)
-    st.write("Defective")
+    
     cv2.imwrite('image.png',img)
     st.image('image.png',img)
   else:
