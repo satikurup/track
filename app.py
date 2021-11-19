@@ -32,7 +32,7 @@ import tempfile
 st.markdown("""
 <style>
 .big-font {
-    font-size:300px !important;
+    font-size:100px !important;
 }
 </style>
 """, unsafe_allow_html=True)
@@ -55,7 +55,7 @@ if ra == "Track defect":
   if uploadFile is not None:
     # Perform your Manupilations (In my Case applying Filters)
     img = load_image(uploadFile)
-    st.markdown('<p class="big-font">Hello World !!</p>', unsafe_allow_html=True)
+    st.markdown('<p class="big-font">Defective</p>', unsafe_allow_html=True)
     image=st.image(img)
     st.write("Image Uploaded Successfully")
     cv2.imwrite('image.png',img)
