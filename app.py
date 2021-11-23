@@ -56,7 +56,7 @@ if ra == "Track defect":
     st.markdown("""
 <style>
 .big-font {
-    font-size:40px !important;color:Blue;
+    font-size:40px !important;color:Red;
 }
 </style>
 """, unsafe_allow_html=True)
